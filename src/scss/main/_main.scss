@@ -1,0 +1,735 @@
+@import 'glob-var/_glob-var.scss';
+
+.heading-h1 {
+	font-size: 40px;
+	font-weight: bold;
+	max-width: 1170px;
+	margin: 70px auto;
+}
+
+.steps-container {
+	background-color: $grey;
+}
+
+.steps {
+	height: 70px;
+	max-width: 1170px;
+	margin: 0 auto;
+
+	& span {
+		line-height: 70px;
+		font-weight: bold;
+	}
+}
+
+.step-counter {
+	color: $yellow-text;
+}
+.step-description {
+	color: $darck-text;
+	padding-left: 40px;
+}
+
+.asphalt-type-container {
+	margin-top: 60px;
+	max-width: 1170px;
+	margin: 60px auto 90px auto;
+	font-size: 0px;
+	vertical-align: top;
+}
+
+.asphalt-type__label {
+	display: inline-block;
+	width: calc(25% - 25px);
+	font-size: 17px;
+	height: 80px;
+	border: 1px solid $grey-border;
+	vertical-align: top;
+	padding-left: 5%;
+	color: $darck-text;
+	padding-top: 15px;
+	cursor: pointer;
+	text-align: left;
+
+	&.active {
+		background-color: $yellow;
+		background-image: url(../img/check-ico.png);
+		background-repeat: no-repeat;
+		background-position: 20px center;
+		border-color: $yellow;
+	}
+
+	&:not(:last-child) {
+		margin-right: 25px;
+	}
+	&:nth-child(3){
+		padding-top: 0px;
+		line-height: 80px;
+	}
+
+	&:hover{
+		border-color: $yellow;
+	}
+}
+
+input[name="asphalt-type"] {
+	display: none;
+}
+
+.budgetary,
+.standard,
+.gost,
+.federal {
+	max-width: 1170px;
+	margin: 0 auto;
+	margin-bottom: 150px;
+	display: none;
+	position: relative;
+
+	&:after {
+		content: "Гарантия работы 5 лет";
+		height: 60px;
+		position: absolute;
+		width: 300px;
+		border: 2px dotted $yellow;
+		font-weight: bold;
+		color: $darck-text;
+		line-height: 60px;
+		text-align: center;
+		right: 0;
+		bottom: 0;
+	}
+
+}
+
+.budgetary-img {
+	position: relative;
+	margin-left: 115px;
+
+	& img {
+		width: 51%;
+	}
+
+	& .pointer-1 {
+		position: absolute;
+		width: 145px;
+		height: 2px;
+		background-color: $yellow;
+		top: 36%;
+		left: 45%;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой асфальта - 5 см";
+			position: absolute;
+			width: 155px;
+			left: 110%;
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+	& .pointer-2 {
+		position: absolute;
+		height: 2px;
+		background-color: $yellow;
+		top: 50%;
+		left: 41%;
+		width: 192px;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Асфальтная крошка - 10 см";
+			position: absolute;
+			width: 185px;
+			left: 110%;
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+}
+
+.standard-img {
+	position: relative;
+	margin-left: 115px;
+
+	& img {
+		width: 51%;
+	}
+
+	& .pointer-1 {
+		position: absolute;
+		width: 145px;
+		height: 2px;
+		background-color: $yellow;
+		top: 33%;
+		left: 45%;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой асфальта - 5 см";
+			position: absolute;
+			width: 155px;
+			left: 110%;
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+	& .pointer-2 {
+		position: absolute;
+		height: 2px;
+		background-color: $yellow;
+		top: 45%;
+		left: 41%;
+		width: 192px;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой щебня - 10 см";
+			position: absolute;
+			width: 180px;
+			left: 110%;
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+
+	& .pointer-3 {
+		position: absolute;
+		height: 2px;
+		background-color: #f4c900;
+		top: 55%;
+		left: 39%;
+		width: 215px;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой песка - 15 см";
+			position: absolute;
+			width: 180px;
+			left: 110%;
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+}
+
+
+.gost-img {
+	position: relative;
+	margin-left: 115px;
+
+	& img {
+		width: 51%;
+	}
+
+	& .pointer-1 {
+		position: absolute;
+		width: 145px;
+		height: 2px;
+		background-color: $yellow;
+		top: 29%;
+		left: 45%;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой асфальта - 5 см";
+			position: absolute;
+			width: 155px;
+			left: calc(100% + 10px);
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+	& .pointer-2 {
+		position: absolute;
+		height: 2px;
+		background-color: $yellow;
+		top: 41%;
+		left: 41%;
+		width: 192px;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой щебня - 25 см";
+			position: absolute;
+			width: 180px;
+			left: calc(100% + 10px);
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+
+	& .pointer-3 {
+		position: absolute;
+		height: 2px;
+		background-color: #f4c900;
+		top: 52%;
+		left: 39%;
+		width: 215px;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой песка - 30 см";
+			position: absolute;
+			width: 180px;
+			left: calc(100% + 10px);
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+}
+
+.federal-img {
+	position: relative;
+	margin-left: 115px;
+
+	& img {
+		width: 51%;
+	}
+
+	& .pointer-1 {
+		position: absolute;
+		width: 145px;
+		height: 2px;
+		background-color: $yellow;
+		top: 29%;
+		left: 45%;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой асфальта - 5 см";
+			position: absolute;
+			width: 155px;
+			left: calc(100% + 10px);
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+	& .pointer-2 {
+		position: absolute;
+		height: 2px;
+		background-color: $yellow;
+		top: 44%;
+		left: 41%;
+		width: 192px;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой щебня - 40 см";
+			position: absolute;
+			width: 180px;
+			left: calc(100% + 10px);
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+
+	& .pointer-3 {
+		position: absolute;
+		height: 2px;
+		background-color: #f4c900;
+		top: 60%;
+		left: 39%;
+		width: 215px;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой песка - 50 см";
+			position: absolute;
+			width: 180px;
+			left: calc(100% + 10px);
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+	& .pointer-4 {
+		position: absolute;
+		height: 2px;
+		background-color: #f4c900;
+		top: 37%;
+		left: 42%;
+		width: 181px;
+
+		&:before{
+			content: "";
+			position: absolute;
+			height: 4px;
+			width: 4px;
+			background-color: $yellow;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "Слой бетона - 10 см";
+			position: absolute;
+			width: 180px;
+			left: calc(100% + 10px);
+			top: -7px;
+			font-size: 14px;
+			color: $darck-text;
+		}
+	}
+}
+
+#budgetary-input:checked + .budgetary {
+	display: block !important;
+}
+#standard-input:checked + .standard {
+	display: block !important;
+}
+#gost-input:checked + .gost {
+	display: block !important;
+}
+#federal-input:checked + .federal {
+	display: block !important;
+}
+
+@media all and (max-width: 1180px) {
+	.heading-h1 {
+		text-align: center;
+	}
+
+	.steps {
+		margin-left: 15px;
+	}
+
+	.asphalt-type-container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.asphalt-type-container {
+		font-size: 0;
+	}
+	.asphalt-type__label {
+		width: 25%;
+		margin: 0 !important;
+		&.active {
+			background-position: 5px center;
+		}
+	}
+}
+
+@media all and (max-width: 830px) {
+	.budgetary-img,
+	.standard-img,
+	.gost-img,
+	.federal-img {
+		margin-left: 0;
+	}
+}
+
+@media all and (max-width: 780px) {
+	.asphalt-type__label {
+		padding: 0;
+		text-align: center;
+		line-height: normal !important;
+		&.active {
+			background-position: center 45px;
+		}
+	}
+}
+
+@media all and (max-width: 640px) {
+	.asphalt-type-container {
+		padding: 0;
+	}
+	.asphalt-type__label {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.budgetary-img {
+		height: 300px;
+		& img {
+			height: 100%;
+		}
+
+		& .pointer-1 {
+			width: 40px;
+		}
+		& .pointer-2 {
+			width: 40px;
+		}
+	}
+
+	.standard-img {
+		height: 300px;
+
+		& img {
+			height: 100%;
+		}
+
+
+		& .pointer-1 {
+			width: 60px;
+		}
+		& .pointer-2 {
+			width: 60px;
+		}
+		& .pointer-3 {
+			width: 60px;
+		}
+	}
+
+	.gost-img {
+		height: 300px;
+
+		& img {
+			height: 100%;
+		}
+
+
+		& .pointer-1 {
+			width: 60px;
+		}
+		& .pointer-2 {
+			width: 60px;
+		}
+		& .pointer-3 {
+			width: 60px;
+		}
+	}
+
+	.federal-img {
+		height: 300px;
+		& img {
+			height: 100%;
+		}
+
+
+		& .pointer-1 {
+			width: 60px;
+		}
+		& .pointer-2 {
+			width: 60px;
+		}
+		& .pointer-3 {
+			width: 60px;
+		}
+		& .pointer-4 {
+			width: 60px;
+		}
+	}
+}
+
+@media all and (max-width: 500px) {
+	.asphalt-type__label {
+		width: 50%;
+	}
+}
+@media all and (max-width: 460px) {
+	.heading-h1 {
+		font-size: 22px;
+	}
+
+	.budgetary-img {
+		height: 300px;
+		& img {
+			height: 100%;
+		}
+
+		& .pointer-1 {
+			width: 30px;
+		}
+		& .pointer-2 {
+			width: 30px;
+		}
+	}
+
+	.standard-img {
+		height: 300px;
+
+		& img {
+			height: 100%;
+		}
+
+
+		& .pointer-1 {
+			width: 30px;
+		}
+		& .pointer-2 {
+			width: 30px;
+		}
+		& .pointer-3 {
+			width: 30px;
+		}
+	}
+
+	.gost-img {
+		height: 300px;
+
+		& img {
+			height: 100%;
+		}
+
+
+		& .pointer-1 {
+			width: 30px;
+		}
+		& .pointer-2 {
+			width: 30px;
+		}
+		& .pointer-3 {
+			width: 30px;
+		}
+	}
+
+	.federal-img {
+		height: 300px;
+		& img {
+			height: 100%;
+		}
+
+
+		& .pointer-1 {
+			width: 30px;
+		}
+		& .pointer-2 {
+			width: 30px;
+		}
+		& .pointer-3 {
+			width: 30px;
+		}
+		& .pointer-4 {
+			width: 30px;
+		}
+	}
+}
+
+@media all and (max-width: 400px) {
+	.steps span {
+		padding: 0;
+	}
+}
+
+@media all and (max-width: 370px) {
+	.budgetary-img,.standard-img,
+	.gost-img, .federal-img{
+		width: 90%;
+	}
+	.pointer-1::after {
+		font-size: 12px !important;
+	}
+	.pointer-2::after {
+		font-size: 12px !important;
+	}
+	.pointer-3::after {
+		font-size: 12px !important;
+	}
+	.pointer-4::after {
+		font-size: 12px !important;
+	}
+}

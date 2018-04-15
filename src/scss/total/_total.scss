@@ -1,0 +1,94 @@
+@import 'glob-var/_glob-var.scss';
+
+.total {
+	max-width: 1920px;
+	margin: 0 auto;
+	background-image: url(../img/total-bg.png);
+	min-height: 320px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 100px;
+}
+
+.total-inner {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.totoal-price{
+	font-size: 35px;
+	display: inline-block;
+	width: 400px;
+	height: 130px;
+	border: 10px solid $yellow;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 110px;
+	margin-right: 80px;
+
+}
+
+.total-rub {
+	position: relative;
+	color: $yellow;
+	font-weight: bold;
+}
+
+.total-rub::after {
+	content: "";
+	width: 20px;
+	height: 25px;
+	position: absolute;
+	background-image: url(../img/ruble.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 8px;
+	right: -25px;
+}
+
+.more-info {
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	width: 50%;
+
+	& span {
+		color: $yellow-text;
+	}
+}
+
+.get-bill {
+	height: 50px;
+	background-color: $blue;
+	font-weight: bold;
+	font-size: 14px;
+	color: $white;
+	border: none;
+	padding-left: 45px;
+	padding-right: 25px;
+	background-image: url(../img/calc.png);
+	background-repeat: no-repeat;
+	background-position: 20px center;
+
+	&:hover {
+		color: $yellow-text;
+		cursor: pointer;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.total {
+		padding-top: 	50px;
+		overflow-y: hidden;
+	}
+	.totoal-price {
+		display: block;
+		width: 100%;
+		margin: 0 auto;	
+	}
+	.more-info {
+		display: block;
+		margin: 40px auto;
+		width: 90%;
+	}
+}
