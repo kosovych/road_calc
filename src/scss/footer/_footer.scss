@@ -39,6 +39,11 @@
 .footer-nav {
 	list-style: none;
 	margin: 0;
+	padding-left: 70px;
+
+	& li {
+		margin-bottom: 5px;
+	}
 
 	& li:first-child {
 		margin-top: 40px;
@@ -73,4 +78,9 @@
 		width: 90%;
 		margin: 10px auto;
 	}
+.footer-nav {
+
+	padding-left: 0px;
+}
+
 }

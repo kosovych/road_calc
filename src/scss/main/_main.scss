@@ -4,7 +4,7 @@
 	font-size: 40px;
 	font-weight: bold;
 	max-width: 1170px;
-	margin: 70px auto;
+	margin: 60px auto 70px auto;
 }
 
 .steps-container {
@@ -27,20 +27,21 @@
 }
 .step-description {
 	color: $darck-text;
-	padding-left: 40px;
+	font-size: 20px;
+	padding-left: 25px;
 }
 
 .asphalt-type-container {
 	margin-top: 60px;
 	max-width: 1170px;
-	margin: 60px auto 90px auto;
+	margin: 60px auto 80px auto;
 	font-size: 0px;
 	vertical-align: top;
 }
 
 .asphalt-type__label {
 	display: inline-block;
-	width: calc(25% - 25px);
+	width: calc(25% - 20px);
 	font-size: 17px;
 	height: 80px;
 	border: 1px solid $grey-border;
@@ -82,12 +83,11 @@ input[name="asphalt-type"] {
 .federal {
 	max-width: 1170px;
 	margin: 0 auto;
-	margin-bottom: 150px;
+	margin-bottom: 160px;
 	display: none;
 	position: relative;
 
-	&:after {
-		content: "Гарантия работы 5 лет";
+	&_after {
 		height: 60px;
 		position: absolute;
 		width: 300px;
@@ -96,15 +96,15 @@ input[name="asphalt-type"] {
 		color: $darck-text;
 		line-height: 60px;
 		text-align: center;
-		right: 0;
-		bottom: 0;
+		right: 130px;
+		bottom: -75px;
 	}
 
 }
 
 .budgetary-img {
 	position: relative;
-	margin-left: 115px;
+	margin-left: 90px;
 
 	& img {
 		width: 51%;
@@ -112,7 +112,7 @@ input[name="asphalt-type"] {
 
 	& .pointer-1 {
 		position: absolute;
-		width: 145px;
+		width: 150px;
 		height: 2px;
 		background-color: $yellow;
 		top: 36%;
@@ -128,13 +128,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой асфальта - 5 см";
+		&_after {
 			position: absolute;
-			width: 155px;
+			width: 185px;
 			left: 110%;
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -144,7 +142,7 @@ input[name="asphalt-type"] {
 		background-color: $yellow;
 		top: 50%;
 		left: 41%;
-		width: 192px;
+		width: 193px;
 
 		&:before{
 			content: "";
@@ -156,13 +154,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Асфальтная крошка - 10 см";
+		&_after {
 			position: absolute;
-			width: 185px;
+			width: 235px;
 			left: 110%;
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -178,7 +174,7 @@ input[name="asphalt-type"] {
 
 	& .pointer-1 {
 		position: absolute;
-		width: 145px;
+		width: 155px;
 		height: 2px;
 		background-color: $yellow;
 		top: 33%;
@@ -194,13 +190,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой асфальта - 5 см";
+		&_after {
 			position: absolute;
-			width: 155px;
+			width: 180px;
 			left: 110%;
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -210,7 +204,7 @@ input[name="asphalt-type"] {
 		background-color: $yellow;
 		top: 45%;
 		left: 41%;
-		width: 192px;
+		width: 197px;
 
 		&:before{
 			content: "";
@@ -222,13 +216,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой щебня - 10 см";
+		&_after {
 			position: absolute;
 			width: 180px;
 			left: 110%;
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -237,9 +229,9 @@ input[name="asphalt-type"] {
 		position: absolute;
 		height: 2px;
 		background-color: #f4c900;
-		top: 55%;
+		top: 58%;
 		left: 39%;
-		width: 215px;
+		width: 218px;
 
 		&:before{
 			content: "";
@@ -251,13 +243,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой песка - 15 см";
+		&_after {
 			position: absolute;
 			width: 180px;
 			left: 110%;
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -274,7 +264,7 @@ input[name="asphalt-type"] {
 
 	& .pointer-1 {
 		position: absolute;
-		width: 145px;
+		width: 152px;
 		height: 2px;
 		background-color: $yellow;
 		top: 29%;
@@ -290,13 +280,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой асфальта - 5 см";
+		&_after {
 			position: absolute;
-			width: 155px;
+			width: 185px;
 			left: calc(100% + 10px);
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -318,13 +306,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой щебня - 25 см";
+		&_after {
 			position: absolute;
 			width: 180px;
 			left: calc(100% + 10px);
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -347,13 +333,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой песка - 30 см";
+		&_after {
 			position: absolute;
 			width: 180px;
 			left: calc(100% + 10px);
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -361,7 +345,7 @@ input[name="asphalt-type"] {
 
 .federal-img {
 	position: relative;
-	margin-left: 115px;
+	margin-left: 90px;
 
 	& img {
 		width: 51%;
@@ -372,7 +356,7 @@ input[name="asphalt-type"] {
 		width: 145px;
 		height: 2px;
 		background-color: $yellow;
-		top: 29%;
+		top: 26%;
 		left: 45%;
 
 		&:before{
@@ -385,13 +369,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой асфальта - 5 см";
+		&_after {
 			position: absolute;
-			width: 155px;
+			width: 185px;
 			left: calc(100% + 10px);
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -399,9 +381,9 @@ input[name="asphalt-type"] {
 		position: absolute;
 		height: 2px;
 		background-color: $yellow;
-		top: 44%;
+		top: 47%;
 		left: 41%;
-		width: 192px;
+		width: 187px;
 
 		&:before{
 			content: "";
@@ -413,13 +395,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой щебня - 40 см";
+		&_after {
 			position: absolute;
 			width: 180px;
 			left: calc(100% + 10px);
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -430,7 +410,7 @@ input[name="asphalt-type"] {
 		background-color: #f4c900;
 		top: 60%;
 		left: 39%;
-		width: 215px;
+		width: 209px;
 
 		&:before{
 			content: "";
@@ -442,13 +422,11 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой песка - 50 см";
+		&_after {
 			position: absolute;
 			width: 180px;
 			left: calc(100% + 10px);
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
@@ -458,7 +436,7 @@ input[name="asphalt-type"] {
 		background-color: #f4c900;
 		top: 37%;
 		left: 42%;
-		width: 181px;
+		width: 178px;
 
 		&:before{
 			content: "";
@@ -470,16 +448,20 @@ input[name="asphalt-type"] {
 			border-radius: 50%;
 		}
 
-		&:after {
-			content: "Слой бетона - 10 см";
+		&_after {
 			position: absolute;
 			width: 180px;
 			left: calc(100% + 10px);
 			top: -7px;
-			font-size: 14px;
 			color: $darck-text;
 		}
 	}
+}
+.pointer-1_after,
+.pointer-2_after,
+.pointer-3_after,
+.pointer-4_after{
+	font-size: 18px;
 }
 
 #budgetary-input:checked + .budgetary {
